@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet version="1.0"  href="WXR_TaskModel.xsl"?>
+<hamsters version="4">
+    <colors applicationcolor="-13382656" declarativecolor="-1854465" devicecolor="-8879105" inputdevicecolor="-8879105" objectcolor="-14336" outputdevicecolor="-8879105" physicalobjectcolor="-14336" situationalcolor="-3290107" strategiccolor="-4136705"/>
+    <nodes>
+        <task copy="false" critical="0" folded="false" help="" id="1" iterative="false" maxexectime="0" minexectime="0" name="manage WXR" nb_iteration="0" optional="false" type="abstract" x="501" y="8">
+            <operator id="-1" knowledgeproceduraltype="" type="disable" x="534" y="88">
+                <task copy="false" critical="0" folded="false" help="" id="28" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="setup WXR" nb_iteration="0" optional="false" type="abstract" x="368" y="112">
+                    <operator id="-1" knowledgeproceduraltype="" type="concurrent" x="391" y="192">
+                        <task copy="false" critical="0" folded="false" help="" id="30" iterative="true" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="manage modes" nb_iteration="0" optional="false" type="abstract" x="154" y="212">
+                            <operator id="-1" knowledgeproceduraltype="" type="disable" x="203" y="309">
+                                <task copy="false" critical="0" folded="false" help="" id="49" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="decide mode is correct" nb_iteration="0" optional="false" type="cognitive" x="280" y="353"/>
+                                <operator id="-1" knowledgeproceduraltype="" type="enable" x="154" y="353">
+                                    <task copy="false" critical="0" folded="false" help="" id="34" iterative="true" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="change mode" nb_iteration="0" optional="false" type="abstract" x="243" y="433">
+                                        <operator id="-1" knowledgeproceduraltype="" type="choice" x="264" y="513">
+                                            <task copy="false" critical="0" folded="false" help="" id="47" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="switch to TST" nb_iteration="0" optional="false" type="input" x="120" y="563"/>
+                                            <task copy="false" critical="0" folded="false" help="" id="37" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="switch to STDBY" nb_iteration="0" optional="false" type="input" x="321" y="563"/>
+                                            <task copy="false" critical="0" folded="false" help="" id="48" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="switch to WXON" nb_iteration="0" optional="false" type="input" x="7" y="563"/>
+                                            <task copy="false" critical="0" folded="false" help="" id="36" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="switch to WXA" nb_iteration="0" optional="false" type="input" x="219" y="563"/>
+                                            <task copy="false" critical="0" folded="false" help="" id="46" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="switch OFF" nb_iteration="0" optional="false" type="input" x="437" y="563"/>
+                                        </operator>
+                                    </task>
+                                    <task copy="false" critical="0" folded="false" help="" id="33" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="decide change mode" nb_iteration="0" optional="false" type="cognitive" x="5" y="433"/>
+                                </operator>
+                            </operator>
+                        </task>
+                        <task copy="false" critical="0" folded="false" help="" id="18" iterative="true" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="manage tilt angle" nb_iteration="0" optional="false" type="abstract" x="605" y="229">
+                            <operator id="-1" knowledgeproceduraltype="" type="enable" x="645" y="309">
+                                <task copy="false" critical="0" folded="false" help="" id="19" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="decide change tilt angle" nb_iteration="0" optional="false" type="cognitive" x="455" y="353"/>
+                                <task copy="false" critical="0" folded="false" help="" id="20" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="change tilt angle" nb_iteration="0" optional="false" type="abstract" x="749" y="353">                                    <operator id="-1" knowledgeproceduraltype="" type="disable" x="787" y="433">
+                                        <operator id="-1" knowledgeproceduraltype="" type="enable" x="705" y="473">
+                                            <task copy="false" critical="0" folded="false" help="" id="53" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="stabilzation off" nb_iteration="0" optional="false" type="input" x="638" y="533"/>
+                                            <task copy="false" critical="0" folded="false" help="" id="41" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="select auto" nb_iteration="0" optional="false" type="input" x="839" y="533"/>
+                                            <task copy="false" critical="0" folded="false" help="" id="56" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="select manual" nb_iteration="0" optional="false" type="input" x="534" y="533"/>
+                                            <task copy="false" critical="0" folded="false" help="" id="38" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="angle editing" nb_iteration="0" optional="false" type="abstract" x="742" y="533">
+                                                <operator id="-1" knowledgeproceduraltype="" type="disable" x="770" y="613">
+                                                    <task copy="false" critical="0" folded="false" help="" id="39" iterative="true" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="modify angle" nb_iteration="0" optional="false" type="abstract" x="688" y="652">
+                                                        <operator id="-1" knowledgeproceduraltype="" type="enable" x="716" y="732">
+                                                            <task copy="false" critical="0" folded="false" help="" id="45" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="check updated value" nb_iteration="0" optional="false" type="output" x="756" y="767"/>
+                                                            <task copy="false" critical="0" folded="false" help="" id="44" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="edit angle" nb_iteration="0" optional="false" type="input" x="676" y="767"/>
+                                                            <task copy="false" critical="0" folded="false" help="" id="43" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="decide angle" nb_iteration="0" optional="false" type="cognitive" x="579" y="767"/>
+                                                        </operator>
+                                                    </task>
+                                                    <task copy="false" critical="0" folded="false" help="" id="40" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="stabilization on" nb_iteration="0" optional="false" type="input" x="784" y="652"/>
+                                                </operator>
+                                            </task>
+                                        </operator>
+                                        <task copy="false" critical="0" folded="false" help="" id="42" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="decide angle is correct" nb_iteration="0" optional="false" type="cognitive" x="875" y="473"/>
+                                    </operator>
+                                </task>
+                            </operator>
+                        </task>
+                    </operator>
+                </task>
+                <task copy="false" critical="0" folded="false" help="" id="27" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="decide WXR is ready" nb_iteration="0" optional="false" type="cognitive" x="669" y="112"/>
+            </operator>
+        </task>
+    </nodes>
+    <datas>
+        <data name="Angle" oldname="" type="Object" x="756" y="854">
+            <link feature="none" sourceid="44" type="Store" value=""/>
+            <link feature="none" sourceid="45" type="Access" value=""/>
+        </data>
+        <data name="Angle" oldname="" type="Information" x="630" y="854">
+            <link feature="none" sourceid="43" type="Store" value=""/>
+            <link feature="none" sourceid="44" type="Access" value=""/>
+        </data>
+        <data name="displayed angle" oldname="" type="Information" x="865" y="708">
+            <link feature="none" sourceid="45" type="Store" value=""/>
+        </data>
+    </datas>
+    <errors/>
+    <parameters/>
+</hamsters>

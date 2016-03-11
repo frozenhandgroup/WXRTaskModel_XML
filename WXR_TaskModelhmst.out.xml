@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    
+    <hamsters>
+<task>manage WXR<operator>disable<task>setup WXR<operator>concurrent<task>manage modes<operator>disable<task>decide mode is correct</task>
+</operator>
+</task>
+<task>manage tilt angle<operator>enable<task>decide change tilt angle</task>
+<task>change tilt angle<operator>disable<task>decide angle is correct</task>
+</operator>
+</task>
+</operator>
+</task>
+</operator>
+</task>
+<task>decide WXR is ready</task>
+</operator>
+</task>
+</hamsters>
+    
+        
+            
+            
+        
+        
+            
+            
+        
+        
+            
+        
+    
+    
+    
