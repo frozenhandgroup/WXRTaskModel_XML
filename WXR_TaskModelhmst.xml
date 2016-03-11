@@ -22,7 +22,7 @@
                                     </task>
                                     <task copy="false" critical="0" folded="false" help="" id="33" iterative="false" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="decide change mode" nb_iteration="0" optional="false" type="cognitive" x="5" y="433"/>
                                 </operator>
-                            </operator>
+                            </operator> 
                         </task>
                         <task copy="false" critical="0" folded="false" help="" id="18" iterative="true" knowledgeproceduraltype="" maxexectime="0" minexectime="0" name="manage tilt angle" nb_iteration="0" optional="false" type="abstract" x="605" y="229">
                             <operator id="-1" knowledgeproceduraltype="" type="enable" x="645" y="309">
